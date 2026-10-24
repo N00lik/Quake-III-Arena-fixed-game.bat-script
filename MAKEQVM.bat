@@ -28,14 +28,13 @@ if not exist "bg_lib.asm" (
     if exist "..\bg_lib.asm" copy /y "..\bg_lib.asm" . >nul
 )
 
-:: Конфигурация компилятора
 set cc=lcc -DQ3_VM -S -Wf-target=bytecode -Wf-g -I..\..\cgame -I..\..\game -I..\..\ui
 
 echo ---------------------------------------------------
 echo  [1/2] AUTOMATICALLY COMPILING ALL .C FILES...
 echo ---------------------------------------------------
 
-:: ЦИКЛ: Компилирует всё, кроме g_rankings.c
+:: Compiling everything exept g_rankings.c
 for %%i in (..\*.c) do (
     if /i "%%~nxi"=="g_rankings.c" (
         echo Skipping broken system file: %%~nxi
