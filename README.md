@@ -1,4 +1,4 @@
-That script helps you build your own .qvm from official id-Software Quake-III-Arena sources. Use him instead of default game.bat script to avoid "Error opening bg_lib.asm" and other problems
+That bat script helps you build your own .qvm from official id-Software Quake3 arena sources. Use him instead of default game.bat script to avoid "Error opening bg_lib.asm" and other problems
 
   1 - Download MAKEQVM.bat script
   
